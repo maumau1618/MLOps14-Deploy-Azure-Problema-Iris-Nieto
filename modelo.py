@@ -4,7 +4,6 @@ from sklearn import tree
 from sklearn import datasets
 import pickle
 
-
 iris = datasets.load_iris()
 iris.keys()
 
@@ -24,7 +23,7 @@ clf = tree.DecisionTreeClassifier()
 clf = clf.fit(x_treino, y_treino)
 
 preditos = clf.predict(x_teste)
-print("Preditos:",preditos)
+print("Predicciones:",preditos)
 print("Real    :",y_teste)
 
 from sklearn.metrics import accuracy_score
